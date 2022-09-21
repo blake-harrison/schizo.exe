@@ -1,0 +1,28 @@
+{
+  "name": "schizo.exe",
+  "version": "1.0.0",
+  "description": "HAHAHAHHAHAHAHA",
+  "main": "index.js",
+  "scripts": {
+    "test": "letmehearthevoices",
+    "start":"electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blake-harrison/schizo.exe.git"
+  },
+  "keywords": [
+    "schizo",
+    "insane",
+    "KILLHER"
+  ],
+  "author": "i dont want to put my name on this",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blake-harrison/schizo.exe/issues"
+  },
+  "homepage": "https://github.com/blake-harrison/schizo.exe#readme",
+  "dependencies": {
+    "electron": "^20.1.4"
+  }
+}
