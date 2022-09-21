@@ -1,0 +1,7 @@
+todo:
+
+- make it play the sounds at the random intervals
+- get the sounds
+- color scheme
+- crypto miner
+- manual
