@@ -1,5 +1,7 @@
 # schizo.exe
 Have you ever wondered what it's like to have schizophrenia? 
+
+
 Too bad! schizo.exe will let you hear the voices.
 
 
