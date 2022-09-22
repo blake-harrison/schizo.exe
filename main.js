@@ -11,4 +11,17 @@ const createWindow = () => {
 
 app.whenReady().then(() => {
     createWindow()
+
+    app.on('activate',() => {
+        if(BrowserWindow.getAllWindows().length === 0) createWindow()
+        HEAR_THE_VOICES()
+    })
 })
+
+app.on('window-all-closed', () => {
+    if(process.platform!=='darwin') app.quit()
+})
+
+function HEAR_THE_VOICES() {
+
+}
