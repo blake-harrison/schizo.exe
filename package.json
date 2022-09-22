@@ -2,10 +2,10 @@
   "name": "schizo.exe",
   "version": "1.0.0",
   "description": "HAHAHAHHAHAHAHA",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "letmehearthevoices",
-    "start":"electron ."
+    "start": "electron . --no-sandbox"
   },
   "repository": {
     "type": "git",
