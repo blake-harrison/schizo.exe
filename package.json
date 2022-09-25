@@ -24,6 +24,7 @@
   "homepage": "https://github.com/blake-harrison/schizo.exe#readme",
   "dependencies": {
     "electron": "^20.1.4",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "sound-play": "^1.1.0"
   }
 }

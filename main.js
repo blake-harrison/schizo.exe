@@ -1,5 +1,7 @@
 const { app, BrowserWindow } = require('electron')
 var fs = require('fs')
+const sound = require("sound-play");
+const path = require('path');
 
 const createWindow = () => {
     const win = new BrowserWindow({
@@ -12,7 +14,7 @@ const createWindow = () => {
 
 app.whenReady().then(() => {
     //createWindow()
-    console.log("SCHIZO TIME");
+    //console.log("SCHIZO TIME");
     get_rid_of_your_meds();
 
     app.on('activate',() => {
@@ -43,15 +45,27 @@ function HEAR_THE_VOICES() {
 
 }
 
+function which_voice(num) {
+    return new Promise((resolve,reject) => {
+        resolve(Math.floor(Math.random() * num));
+    })
+}
+
 // this function I AM IN SIDE YOUR WALLS TEAR YOUR SKIN OFF TO GET THE BUGS OUT
 async function get_rid_of_your_meds() {
     cat = await HEAR_THE_VOICES();
-    //console.log(list);
+    //console.log(cat);
     num = cat[0];
     list = cat[1];
-    console.log(Math.random())
+    //console.log(num)
+    gen = await which_voice(num);
+    selected_voice = list[gen];
+    console.log(selected_voice);
+    filepath = path.join(__dirname,"VOICES/") + selected_voice;
+    sound.play(filepath);    
 }
 
 function take_meds() {
     app.quit();
 }
+
